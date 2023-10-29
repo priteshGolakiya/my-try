@@ -1,0 +1,30 @@
+.text-carousel {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.text-container {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.text-items {
+  display: inline-block;
+  animation: scroll 10s linear infinite;
+}
+
+.text-item {
+  display: inline-block;
+  padding: 10px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
