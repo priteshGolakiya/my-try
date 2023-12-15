@@ -16,8 +16,7 @@ const ImageSlider = () => {
       message: "Nighttime cityscape",
     },
     {
-      imageSrc:
-        "https://plus.unsplash.com/premium_photo-1697504578956-fdb28e11933c?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHx8",
+      imageSrc: "https://source.unsplash.com/random?landscape,sky",
       message: "City skyline",
     },
   ];

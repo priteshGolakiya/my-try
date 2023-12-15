@@ -2,25 +2,96 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Hero from "../components/home/Hero";
-import Card from "../common/Card/Card";
-import CounterStatsCard from "../common/Counter/CounterStatsCard";
-import styles from "../styles/home/Home.module.css";
+import Card from "../common/Card/Card"; // Import Card from the same directory
+import CounterStatsCard from "../common/Counter/CounterStatsCard"; // Import CounterStatsCard
+import styles from "../styles/home/Home.module.css"; // Import your custom CSS for the Home component
 import {
-  proTeam,
-  recentCaseStudies,
-  cardsData,
-  counterData,
-  blogArticle,
-} from "../Data/Data";
+  faAward,
+  faCheck,
+  faDesktop,
+  faMugHot,
+  faPenClip,
+  faPeoplePulling,
+} from "@fortawesome/free-solid-svg-icons";
 import CardSecond from "../common/CardSecond/CardSecond";
 import TextCarousel from "../common/Carousel/TextCarousel";
 import TextCarousel2 from "../common/Carousel/TextCarousel2.jsx";
+import { proTeam, recentCaseStudies } from "../Data/Data";
+
+const cardsData = [
+  {
+    imgUrl: "https://source.unsplash.com/random?landscape,mountain",
+    title: "Grapic Design",
+    alt: "Try",
+    description: "...",
+    icon: faDesktop,
+  },
+  {
+    imgUrl: "https://source.unsplash.com/random?landscape,mountain",
+    title: "App Design",
+    alt: "App Design",
+    description: "...",
+    icon: faPenClip,
+  },
+  {
+    imgUrl: "https://source.unsplash.com/random?landscape,mountain",
+    title: "App Design",
+    alt: "App Design",
+    description: "...",
+    icon: faPenClip,
+  },
+  {
+    imgUrl: "https://source.unsplash.com/random?landscape,mountain",
+    title: "App Design",
+    alt: "App Design",
+    description: "...",
+    icon: faPenClip,
+  },
+  {
+    imgUrl: "https://source.unsplash.com/random?landscape,mountain",
+    title: "App Design",
+    alt: "App Design",
+    description: "...",
+    icon: faPenClip,
+  },
+  {
+    imgUrl: "https://source.unsplash.com/random?landscape,mountain",
+    title: "App Design",
+    alt: "App Design",
+    description: "...",
+    icon: faPenClip,
+  },
+  {
+    imgUrl: "https://source.unsplash.com/random?landscape,mountain",
+    title: "App Design",
+    alt: "App Design",
+    description: "...",
+    icon: faPenClip,
+  },
+  {
+    imgUrl: "https://source.unsplash.com/random?landscape,mountain",
+    title: "App Design",
+    alt: "App Design",
+    description: "...",
+    icon: faPenClip,
+  },
+  // Add more card data as needed
+];
+
+const counterData = [
+  { title: "Staticfied Customers", targetValue: 329, icon: faPeoplePulling },
+  { title: "Complete Project", targetValue: 89, icon: faCheck },
+  { title: "Win Global Award", targetValue: 100, icon: faAward },
+  { title: "Cup of Coffee", targetValue: 100, icon: faMugHot },
+  // Add more counters with target values and icons
+];
 
 function Home() {
   return (
     <div className={styles.home}>
       <Hero />
       <h1 className={styles.pageTitle}>My Service Area</h1>
+
       {/* card start  */}
       <div className={styles.cardGrid}>
         {cardsData.map((card, index) => (
@@ -35,6 +106,7 @@ function Home() {
         ))}
       </div>
       {/* card ends */}
+
       <section className={styles.hero}>
         <h1 className={styles.about}>ABOUT COMPANY</h1>
         <div className={styles.heroContent}>
@@ -55,6 +127,7 @@ function Home() {
           </Link>
         </div>
       </section>
+
       {/* Counter cards */}
       <div className={`${styles.counter}`}>
         {counterData.map((counter, index) => (
@@ -66,12 +139,12 @@ function Home() {
           />
         ))}
       </div>
+
       <h1 className={styles.work}>WORK GALLERY</h1>
       <h1 className={styles.recentCase}>Recent Case Studies</h1>
+
       <CardSecond data={recentCaseStudies} />
-      <Link to="/" className={styles.heroButton}>
-        VIEW ALL PROJECT
-      </Link>
+
       <section className={styles.hero}>
         <h1 className={styles.about}>ABOUT COMPANY</h1>
         <div className={styles.heroContent}>
@@ -86,17 +159,6 @@ function Home() {
       <h1 className={styles.heroTitle}>What our Customer Say</h1>
 
       <CardSecond data={proTeam} />
-
-      <Link to="/" className={styles.heroButton} style={{ margin: "20px" }}>
-        VIEW ALL TEAM MEMBER
-      </Link>
-
-      <br />
-
-      <h1 className={styles.about}>BLOG & ARTICLE</h1>
-      <h1 className={styles.heroTitle}>Read Our Blog & Article</h1>
-
-      <CardSecond data={blogArticle} />
     </div>
   );
 }

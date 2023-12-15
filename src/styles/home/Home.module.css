@@ -1,0 +1,151 @@
+.home {
+  text-align: center;
+}
+
+.pageTitle {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Card Grid */
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(254px, 1fr));
+  gap: 32px;
+  padding: 32px;
+  justify-content: center; /* Center align cards */
+}
+
+/* Tablet view - 2 columns */
+@media (max-width: 768px) {
+  .cardGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile view - 1 column */
+@media (max-width: 480px) {
+  .cardGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Desktop view - 3 columns */
+@media (min-width: 1200px) {
+  .cardGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Hero Section Styles */
+.hero {
+  background-image: url("https://nerox.vercel.app/assets/img/bg/about-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px;
+  color: #fff;
+  margin: 45px;
+  border-radius: 15px;
+}
+
+.heroContent {
+  /* padding: 100px; */
+  padding-top: 50px;
+  margin: 0 auto;
+  max-width: 1200px; /* Limit the width of hero content */
+}
+
+.heroTitle {
+  font-size: 2.8125rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.heroDescription {
+  font-size: 15px;
+  padding: 0 80px;
+}
+
+.heroDescription p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #777b83;
+  margin-bottom: 30px;
+  line-height: 28px;
+}
+
+.heroButton {
+  letter-spacing: 2px;
+  padding: 13px 34px;
+  border-radius: 500px;
+  display: inline-block;
+  font-weight: 700;
+  transition: all 0.4s ease-in-out;
+  background: #fd4766;
+  border: 2px solid transparent;
+  text-align: center;
+  margin-top: 2w0px;
+  margin-right: 20px;
+  color: #fff;
+}
+
+.heroButton:hover {
+  background: transparent;
+  color: #fd4766;
+  border-color: #fd4766;
+}
+
+.about {
+  display: inline-block;
+  background: linear-gradient(
+    260.52deg,
+    #1c99fe -4.98%,
+    #7644ff 48.42%,
+    #fd4766 96.9%
+  );
+  border-radius: 5px;
+  padding: 6px 12px;
+  line-height: 15px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+}
+
+.counter {
+  margin-top: -150px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 0px;
+  width: 95%;
+}
+
+.work {
+  display: inline-block;
+  background: linear-gradient(
+    260.52deg,
+    #1c99fe -4.98%,
+    #7644ff 48.42%,
+    #fd4766 96.9%
+  );
+  border-radius: 5px;
+  padding: 6px 12px;
+  line-height: 15px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+  margin: 50px 0px 50px 0px;
+}
+
+.recentCase {
+  text-align: center;
+  font-size: 45px;
+}

@@ -1,0 +1,159 @@
+/* Animation for cardTop */
+@keyframes showCardTop {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+/* Animation for cardBottom */
+@keyframes showCardBottom {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+/* Animation for description */
+@keyframes showDescription {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  border: 1px solid #e7e9ee;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card::before {
+  position: absolute;
+  content: "";
+  background: linear-gradient(
+    260.52deg,
+    #1c99fe -4.98%,
+    #7644ff 48.42%,
+    #fd4766 96.9%
+  );
+  border-radius: 10px;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-out 0s;
+}
+
+.cardImage {
+  height: 250px;
+  width: 100%;
+}
+
+.card:hover::before {
+  transform: rotate(-6.05deg);
+  visibility: visible;
+  opacity: 1;
+}
+
+.cardInner {
+  padding: 20px;
+  gap: 16px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+/* Apply different animations to different sections */
+.cardTop {
+  animation: showCardTop 0.3s forwards;
+}
+
+.card:hover .cardTop {
+  animation-delay: 0.1s;
+}
+
+.cardTop,
+.cardBottom,
+.description p {
+  color: #fff;
+  text-align: center;
+  transition: all 0.4s;
+  font-size: 16px;
+  width: 100%;
+}
+
+.cardTop:hover,
+.description:hover p {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Apply different animations to different sections */
+.cardBottom {
+  animation: showCardBottom 0.3s forwards;
+}
+
+.card:hover .cardBottom {
+  animation-delay: 0.1s;
+}
+
+/* Apply different animations to different sections */
+.description {
+  animation: showDescription 0.3s forwards;
+}
+
+.card:hover .description {
+  animation-delay: 0.1s;
+}
+
+.tpservices__icon {
+  transition: all 0.3s ease-out 0s;
+  transform: translateY(0);
+}
+
+.card:hover .tpservices__icon {
+  transform: translateY(-5px);
+}
+
+.flaticonCoding {
+  font-size: 60px;
+  color: #fd4766;
+}
+
+.description {
+  font-size: 2rem;
+}
+
+.card:hover .description p {
+  color: #fd4766;
+}

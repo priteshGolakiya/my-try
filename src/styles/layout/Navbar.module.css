@@ -123,6 +123,29 @@ body.open .navigation-menu__overlay {
   color: #27b4b4;
 }
 
+/* Modified styles for active class */
+.active {
+  position: relative;
+  color: #fd4766;
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+}
+
+.active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 0.1rem solid rgb(255, 0, 179);
+  width: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.active:hover::before {
+  width: 100%;
+  transition: width 0.3s ease-in-out;
+}
+
 @media only screen and (min-width: 768px) {
   .navigation-menu__labels {
     position: static;

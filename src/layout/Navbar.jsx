@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/layout/Navbar.module.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const toggleMenuClicked = () => {
@@ -39,12 +39,24 @@ const Navbar = () => {
       </button>
       <h1 className={styles["site-identity-logo"]}>Pritesh Golakiya</h1>
       <section className={styles["navigation-menu__labels"]}>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/blog">Blog</Link>
-        <Link to="/pages">Pages</Link>
-        <Link to="/services">Services</Link>
-        <Link to="/contact">Contact Us</Link>
+        <NavLink className={styles["link"]} to="/">
+          Home
+        </NavLink>
+        <NavLink className={styles["link"]} to="/about">
+          About
+        </NavLink>
+        <NavLink className={styles["link"]} to="/blog">
+          Blog
+        </NavLink>
+        <NavLink className={styles["link"]} to="/pages">
+          Pages
+        </NavLink>
+        <NavLink className={styles["link"]} to="/services">
+          Services
+        </NavLink>
+        <NavLink className={styles["link"]} to="/contact">
+          Contact Us
+        </NavLink>
       </section>
     </nav>
   );

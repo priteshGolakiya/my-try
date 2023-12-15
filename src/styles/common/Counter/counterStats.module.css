@@ -1,0 +1,40 @@
+/* counterStats.module.css */
+
+/* Container styles */
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Adjust the margin-top as needed */
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Statistics styles */
+.stats {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+
+.stats .fa {
+  color: #008080;
+  font-size: 60px;
+}
+
+.counting {
+  font-size: 60px;
+  color: #008080;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* Adjust the styles based on your design preferences */

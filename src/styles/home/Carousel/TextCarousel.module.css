@@ -20,6 +20,14 @@
   padding: 10px;
 }
 
+.img {
+  border-radius: 50px;
+}
+
+.description {
+  display: flex;
+}
+
 @keyframes scroll {
   0% {
     transform: translateX(100%);

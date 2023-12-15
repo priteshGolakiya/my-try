@@ -1,0 +1,23 @@
+.active {
+  position: relative;
+  color: #ff3366; /* Modify the text color to your preference */
+  transform: scale(1.2); /* Slight scaling for the active element */
+  transition: all 0.4s ease-in-out; /* Slightly faster transition */
+
+  /* Add a text shadow for extra emphasis */
+  text-shadow: 0 1px 6px rgba(174, 0, 248, 0.881);
+}
+
+/* .active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 0.2rem solid #ff3366;
+  width: 0;
+  transition: width 0.3s ease-in-out; 
+}
+
+.active:hover::before {
+  width: 100%;
+} */

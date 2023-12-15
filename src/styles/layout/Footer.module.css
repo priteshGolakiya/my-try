@@ -1,0 +1,59 @@
+/* Footer.module.css */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-image: url(https://nerox.vercel.app/assets/img/bg/cta-bg.jpg);
+  padding: 40px 0;
+  color: #fff;
+}
+
+.contactInfo,
+.getInTouch {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.contactInfo h3,
+.getInTouch h3 {
+  margin-bottom: 20px;
+  color: #ecf0f1;
+}
+
+.contactInfo p,
+.contactInfo ul {
+  margin-bottom: 20px;
+  color: #bdc3c7;
+}
+
+.contactInfo ul li {
+  list-style: none;
+  margin-bottom: 8px;
+}
+
+.getInTouch form {
+  display: flex;
+  flex-direction: column;
+}
+
+.getInTouch form input,
+.getInTouch form textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  background-color: #fff;
+}
+
+.getInTouch form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #3498db;
+  cursor: pointer;
+}
+
+.getInTouch form button:hover {
+  background-color: #2980b9;
+}
