@@ -47,6 +47,7 @@ function Home() {
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo
           </p>
+          <p style={{ marginTop: "15px" }}></p>
           <Link to="/" className={styles.heroButton}>
             Jump for a quick Meeting
           </Link>

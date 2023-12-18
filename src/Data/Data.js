@@ -13,58 +13,58 @@ import {
 
 export const cardsData = [
   {
-    imgUrl: "https://source.unsplash.com/random?landscape,mountain",
-    title: "Grapic Design",
-    alt: "Try",
+    imgUrl:
+      "https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-html-logo-0.png",
+    title: "HTML5",
+    alt: "HTML5",
     description: "...",
     icon: faDesktop,
   },
   {
-    imgUrl: "https://source.unsplash.com/random?landscape,mountain",
-    title: "App Design",
-    alt: "App Design",
+    imgUrl:
+      "https://icons-for-free.com/iconfiles/png/512/css3-1331550887274886564.png",
+    title: "Css 3",
+    alt: "Css 3",
     description: "...",
     icon: faPenClip,
   },
   {
-    imgUrl: "https://source.unsplash.com/random?landscape,mountain",
-    title: "App Design",
-    alt: "App Design",
+    imgUrl:
+      "https://www.freepnglogos.com/uploads/javascript-png/js-outline-javascript-logo-download-clip-art-with-transparent-25.png",
+    title: "Java Script",
+    alt: "Java Script",
     description: "...",
     icon: faPenClip,
   },
   {
-    imgUrl: "https://source.unsplash.com/random?landscape,mountain",
-    title: "App Design",
-    alt: "App Design",
+    imgUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/C_Logo.png/640px-C_Logo.png",
+    title: "C",
+    alt: "C",
     description: "...",
     icon: faPenClip,
   },
   {
-    imgUrl: "https://source.unsplash.com/random?landscape,mountain",
-    title: "App Design",
-    alt: "App Design",
+    imgUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/3/32/C%2B%2B_logo.png",
+    title: "C++",
+    alt: "C++",
     description: "...",
     icon: faPenClip,
   },
   {
-    imgUrl: "https://source.unsplash.com/random?landscape,mountain",
-    title: "App Design",
-    alt: "App Design",
+    imgUrl:
+      "https://brandlogos.net/wp-content/uploads/2016/06/bootstrap-logo-vector-download.jpg",
+    title: "Bootstrap",
+    alt: "Bootstrap",
     description: "...",
     icon: faPenClip,
   },
+
   {
-    imgUrl: "https://source.unsplash.com/random?landscape,mountain",
-    title: "App Design",
-    alt: "App Design",
-    description: "...",
-    icon: faPenClip,
-  },
-  {
-    imgUrl: "https://source.unsplash.com/random?landscape,mountain",
-    title: "App Design",
-    alt: "App Design",
+    imgUrl: "https://pngimg.com/uploads/php/php_PNG10.png",
+    title: "PHP",
+    alt: "PHP",
     description: "...",
     icon: faPenClip,
   },

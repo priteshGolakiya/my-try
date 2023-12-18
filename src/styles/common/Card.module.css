@@ -56,8 +56,8 @@
 }
 
 .firstCard img {
-  width: 100%;
-  height: auto; /* Ensure the image maintains its aspect ratio */
+  width: 50%;
+  height: auto;
 }
 
 button {
